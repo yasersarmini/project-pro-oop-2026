@@ -6,7 +6,7 @@ namespace project_pro_oop_2026
     {
         static void Main(string[] args)
         {
-
+            Speler speler = new Speler();
         }
     }
 
