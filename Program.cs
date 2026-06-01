@@ -7,6 +7,13 @@ namespace project_pro_oop_2026
         static void Main(string[] args)
         {
             Speler speler = new Speler();
+
+            Console.WriteLine("INPUT");
+            Console.WriteLine("************************");
+            Console.WriteLine("Geef je naam in");
+            speler.Naam = Console.ReadLine();
+            Console.WriteLine("Geef een woord of zin in:");
+            speler.Tekst = Console.ReadLine();
         }
     }
 
