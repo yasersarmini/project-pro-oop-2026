@@ -7,19 +7,25 @@ namespace project_pro_oop_2026
         static void Main(string[] args)
         {
             Speler speler = new Speler();
+            try
+            {
+                Console.WriteLine("INPUT");
+                Console.WriteLine("************************");
+                Console.WriteLine("Geef je naam in");
+                speler.Naam = Console.ReadLine();
+                Console.WriteLine("Geef een woord of zin in:");
+                speler.Tekst = Console.ReadLine();
+                Console.WriteLine("************************");
+                Console.WriteLine("OUTPUT");
 
-            Console.WriteLine("INPUT");
-            Console.WriteLine("************************");
-            Console.WriteLine("Geef je naam in");
-            speler.Naam = Console.ReadLine();
-            Console.WriteLine("Geef een woord of zin in:");
-            speler.Tekst = Console.ReadLine();
-            Console.WriteLine("************************");
-            Console.WriteLine("OUTPUT");
-
-            ScrabbleWoord woord = new ScrabbleWoord();
-            woord.Tekst = speler.Tekst;
-            woord.Berekenen(speler.Naam);
+                ScrabbleWoord woord = new ScrabbleWoord();
+                woord.Tekst = speler.Tekst;
+                woord.Berekenen(speler.Naam);
+            }
+            catch
+            {
+                Console.WriteLine("Geef een geldige invoer op");
+            }
         }
     }
 
