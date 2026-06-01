@@ -24,4 +24,9 @@ namespace project_pro_oop_2026
     {
         public string Naam { get; set; }
     }
+
+    class ScrabbleWoord : Woord
+    {
+
+    }
 }
