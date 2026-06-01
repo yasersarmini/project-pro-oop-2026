@@ -14,6 +14,12 @@ namespace project_pro_oop_2026
             speler.Naam = Console.ReadLine();
             Console.WriteLine("Geef een woord of zin in:");
             speler.Tekst = Console.ReadLine();
+            Console.WriteLine("************************");
+            Console.WriteLine("OUTPUT");
+
+            ScrabbleWoord woord = new ScrabbleWoord();
+            woord.Tekst = speler.Tekst;
+            woord.Berekenen(speler.Naam);
         }
     }
 
