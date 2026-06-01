@@ -15,8 +15,8 @@ namespace project_pro_oop_2026
         public string Tekst { get; set; }
     }
 
-    class Woord
+    class Woord : IWoord
     {
-
+        public string Tekst { get; set; }
     }
 }
