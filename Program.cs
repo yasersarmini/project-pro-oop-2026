@@ -27,6 +27,11 @@ namespace project_pro_oop_2026
 
     class ScrabbleWoord : Woord
     {
+        private Random random;
 
+        public ScrabbleWoord()
+        {
+            random = new Random();
+        }
     }
 }
