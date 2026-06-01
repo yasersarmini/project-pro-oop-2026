@@ -20,8 +20,8 @@ namespace project_pro_oop_2026
         public string Tekst { get; set; }
     }
 
-    class Speler
+    class Speler : Woord
     {
-
+        public string Naam { get; set; }
     }
 }
