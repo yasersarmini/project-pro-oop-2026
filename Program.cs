@@ -33,5 +33,20 @@ namespace project_pro_oop_2026
         {
             random = new Random();
         }
+
+        public void Berekenen()
+        {
+            int totaalAantalKarakters = 0;
+            int totaalWaardeKarakters = 0;
+
+            foreach (char c in Tekst)
+            {
+                totaalAantalKarakters++;
+                totaalWaardeKarakters += random.Next(0, 26);
+            }
+
+            Console.WriteLine("Aantal karakters: " + totaalAantalKarakters);
+            Console.WriteLine("Totale waarde: " + totaalWaardeKarakters);
+        }
     }
 }
