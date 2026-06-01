@@ -48,5 +48,20 @@ namespace project_pro_oop_2026
             Console.WriteLine("Aantal karakters: " + totaalAantalKarakters);
             Console.WriteLine("Totale waarde: " + totaalWaardeKarakters);
         }
+
+        public void Berekenen(string naamGebruiker)
+        {
+            int totaalAantalKarakters = 0;
+            int totaalWaardeKarakters = 0;
+
+            foreach (char c in Tekst)
+            {
+                totaalAantalKarakters++;
+                totaalWaardeKarakters += random.Next(0, 26);
+            }
+
+            Console.WriteLine(naamGebruiker + ", aantal karakters: " + totaalAantalKarakters);
+            Console.WriteLine(naamGebruiker + ", totale waarde: " + totaalWaardeKarakters);
+        }
     }
 }
