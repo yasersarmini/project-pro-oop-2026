@@ -10,6 +10,11 @@ namespace project_pro_oop_2026
         }
     }
 
+    interface IWoord
+    {
+        public string Tekst { get; set; }
+    }
+
     class Woord
     {
 
